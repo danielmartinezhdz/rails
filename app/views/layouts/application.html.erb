@@ -10,7 +10,7 @@
 
   <body>
   	<p class="notice" style="<%='display:none;' if notice.nil? %>" ><%= notice %></p>
-    <p class="alert" style="<%='display:none;' if notice.nil? %>"><%= alert %></p>
+    <p class="alert" style="<%='display:none;' if alert.nil? %>"><%= alert %></p>
 
     <header>
     	<nav>
@@ -20,10 +20,10 @@
     			</li>
     			<%if usuario_signed_in?%>
     				<li>
-    					<%= link_to "Editar Perfil", edit_usuario_session_path(current_usuario) %>
+    					<%= link_to "Editar Perfil", edit_usuario_registration_path(current_usuario) %>
     				</li>
     				<li>
-    					<%= link_to "Cerrar Sessión", destroy_usuario_session_path, method: :get %>
+    					<%= link_to "Cerrar Sessión", destroy_usuario_session_path, method: :delete %>
     				</li>
     			<%else%>
     				<li>

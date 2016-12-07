@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.5'
 #GEMAS INSTALADAS DEL PROYECTO
 gem 'bootstrap-sass', '~> 3.0.2.1'
 gem 'devise'
+#para descargar mas imagenes
+gem 'font-awesome-rails'
 
 
 
