@@ -32,7 +32,10 @@ gem 'bootstrap-sass', '~> 3.0.2.1'
 gem 'devise'
 #para descargar mas imagenes
 gem 'font-awesome-rails'
-
+#Esta gema sirve para autentificarse con fb twetter , etc
+gem 'omniauth'
+#
+gem 'omniauth-facebook'
 
 
 # Use Capistrano for deployment
