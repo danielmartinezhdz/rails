@@ -34,8 +34,10 @@ gem 'devise'
 gem 'font-awesome-rails'
 #Esta gema sirve para autentificarse con fb twetter , etc
 gem 'omniauth'
-#
+#Instalaión del middleware de facebbok
 gem 'omniauth-facebook'
+#Instalaión del middleware de twitter
+gem 'omniauth-twitter'
 
 
 # Use Capistrano for deployment
