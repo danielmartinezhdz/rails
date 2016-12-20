@@ -1,0 +1,5 @@
+<h1><%= link_to "Nuevo miembro", new_member_path %></h1>
+
+<%@members.each do |member|%>
+	<h2><%=member.name + " " + member.lastname %> - <%= link_to "Eliminar", member, method: :delete %></h2> - <%= link_to "editar", edit_member_path(member)%>
+<%end%>
