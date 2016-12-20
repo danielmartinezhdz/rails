@@ -1,0 +1,24 @@
+<%title ||= "Agregar Producto"%>
+<h2><%= title%></h2>
+<%= form_for(@product) do |f|%>
+	<div class="be-red white">
+		<%@product.errors.full_messages.each do |message|%>
+			* <%=message%>
+		<%end%>
+	</div>
+	<div class="field">
+		<%= f.text_field :name, placeholder: "Nombre"%>
+	</div>
+	<div class="field">
+		<%= f.text_field :type_product, placeholder: "Tipo" %>
+	</div>
+	<div class="field">
+		<%= f.text_area :description, placeholder: "Decripción" %>
+	</div>
+	<div class="field">
+		<%= f.text_field :quantity, placeholder: "En Existencia" %>
+	</div>
+	<div>
+		<%= f.submit "Guardar", class: "btn btn-success" %>
+	</div>
+<%end%>

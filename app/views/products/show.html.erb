@@ -1,0 +1,7 @@
+<h2><%=@product.name%></h2>
+<p>Tipo: <%=@product.type_product%></p>
+<p>Descripción: <%=@product.description%></p>
+<p>Existencia: <%=@product.quantity%></p>
+
+<%= link_to "Regresar", products_path, class: "btn btn-info"%>
+<%= link_to "Editar", edit_product_path(@product), class: "btn btn-success"%>

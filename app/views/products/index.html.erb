@@ -1,0 +1,7 @@
+<h1>Productos</h1>
+<h2><%= link_to "Agregar Producto", new_product_path, class: "btn btn-warning" %></h2>
+<ul>
+<%@products.each do |product|%>
+	<li><%= link_to product.name, product%> - <%= link_to "Eliminar", product, method: :delete, class: "red" %></li>
+<%end%>
+</ul>
