@@ -3,5 +3,6 @@ class WelcomeController < ApplicationController
   end
 
   def contacto
+  	@menu = Menu.all
   end
 end

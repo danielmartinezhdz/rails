@@ -3,7 +3,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  post "welcome/contacto"
+  post "/contacto", to: "welcome#contacto"
+  get "/contacto", to: "welcome#contacto"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
